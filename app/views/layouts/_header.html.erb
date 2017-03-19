@@ -10,7 +10,7 @@
           <li class="dropdown">
             <a id="dLabel" data-target="#" href="#" data-toggle="dropdown"
               role="button" aria-haspopup="true" aria-expanded="false">
-              Account <span class="caret"></span>
+              Hi, <%= @current_user.name %> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
               <li><%= link_to "Profile", current_user %></li>
