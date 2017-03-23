@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-example:
-  name: Test User
-  email: test@demo.com
+michael:
+  name: Michael Example
+  email: michael@example.com
   password_digest: <%= User.digest "123qwe" %>
