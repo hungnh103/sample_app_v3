@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
   attr_accessor :remember_token
 
   before_save {email.downcase!}
@@ -39,5 +41,10 @@ class User < ApplicationRecord
   # Forgets a user.
   def forget
     update_attributes remember_digest: nil
+  end
+
+  def feed
+    # Micropost.where "user_id = ?", id
+    Micropost.of_user id
   end
 end
