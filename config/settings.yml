@@ -1,0 +1,4 @@
+picture:
+  limit_size: [200, 200]
+micropost:
+  max_length: 140
